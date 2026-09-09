@@ -1,0 +1,47 @@
+[data-staggered-text] {
+  --stagger-duration: .6s;
+}
+
+.staggered-text-segment {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateY(-.65em);
+  transition:
+    opacity var(--stagger-duration) linear,
+    filter var(--stagger-duration) linear,
+    transform var(--stagger-duration) linear;
+  transition-delay: var(--stagger-delay, 0ms);
+  will-change: opacity, filter, transform;
+}
+
+.is-staggered-visible > .staggered-text-segment,
+.is-staggered-visible .staggered-text-segment {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.staggered-text-enabled .reveal-text {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+.staggered-text-enabled #experience .scroll-reveal-word,
+.staggered-text-enabled #contact .scroll-reveal-word {
+  opacity: 1;
+  filter: none;
+  transform: none;
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .staggered-text-segment {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+    will-change: auto;
+  }
+}

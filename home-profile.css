@@ -1,0 +1,405 @@
+/* Homepage-only profile content. Case pages and the archived B variant do not load this file. */
+.home-about {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.home-about .about-profile-screen {
+  height: auto;
+  min-height: 100svh;
+  overflow: visible;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: clamp(34px, 5vw, 74px);
+  padding-bottom: clamp(66px, 8vw, 128px);
+}
+
+.home-about .about-profile-screen + .about-profile-screen {
+  border-top: 1px solid rgba(2, 8, 23, .12);
+}
+
+.home-about .section-head {
+  height: auto;
+  min-height: 44px;
+}
+
+.about-profile-intro,
+.expertise-intro {
+  align-items: start;
+  padding-top: clamp(10px, 1.8vw, 28px);
+}
+
+.about-profile-intro .profile-copy,
+.expertise-intro .profile-copy {
+  align-self: end;
+  max-width: 760px;
+}
+
+.about-profile-intro .profile-copy > p:last-child {
+  max-width: 720px;
+}
+
+.home-about .profile-experience {
+  padding-top: clamp(28px, 4vw, 58px);
+  border-top: 1px solid rgba(2, 8, 23, .14);
+}
+
+.home-about .profile-experience > .section-head {
+  margin-bottom: clamp(34px, 4vw, 64px);
+}
+
+.home-about .experience-main {
+  align-items: start;
+}
+
+.home-about .experience-title {
+  position: sticky;
+  top: clamp(90px, 10vh, 122px);
+}
+
+.home-about .experience-title h2 {
+  max-width: 8ch;
+}
+
+.about-profile-mail {
+  display: inline-block;
+  max-width: 100%;
+  margin-top: 32px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(2, 8, 23, .3);
+  font-size: clamp(16px, 1.35vw, 22px);
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+
+.home-about .timeline article {
+  grid-template-columns: clamp(105px, 9vw, 140px) 1fr;
+  align-items: start;
+  padding: clamp(20px, 2.2vw, 34px) 0;
+}
+
+.home-about .timeline time {
+  padding-top: 4px;
+  white-space: nowrap;
+}
+
+.home-about .timeline h3 {
+  margin-bottom: 8px;
+}
+
+.home-about .timeline .experience-role {
+  margin-bottom: 13px;
+  color: var(--ink);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.home-about .timeline .experience-description {
+  max-width: 760px;
+  color: rgba(2, 8, 23, .62);
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.home-about .timeline .experience-tags {
+  margin-top: 13px;
+  color: rgba(2, 8, 23, .42);
+  font-size: 8px;
+  line-height: 1.55;
+  letter-spacing: .08em;
+}
+
+.expertise-tools-screen {
+  background: #eef1f3;
+}
+
+.expertise-intro .profile-copy .lead {
+  max-width: 700px;
+}
+
+.home-about .expertise-list {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  border-bottom: 1px solid var(--ld);
+}
+
+.home-about .expertise-list article {
+  min-height: clamp(220px, 19vw, 300px);
+  padding-top: 20px;
+  padding-bottom: 24px;
+}
+
+.home-about .expertise-list h3 {
+  margin-top: clamp(24px, 2.4vw, 38px);
+  line-height: 1.15;
+}
+
+.home-about .expertise-list p {
+  max-width: 28ch;
+  font-size: 10px;
+  line-height: 1.75;
+}
+
+.expertise-lower {
+  display: grid;
+  grid-template-columns: .9fr 1.6fr;
+  gap: clamp(48px, 7vw, 110px);
+  align-items: start;
+  padding-top: clamp(8px, 1vw, 16px);
+}
+
+.core-skills h3,
+.about-tools h3 {
+  font-size: clamp(22px, 2vw, 34px);
+  letter-spacing: -.035em;
+}
+
+.core-skill-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0 22px;
+  margin: 26px 0 0;
+  padding: 0;
+  border-top: 1px solid var(--ld);
+  list-style: none;
+}
+
+.core-skill-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--ld);
+  color: rgba(2, 8, 23, .66);
+  font-size: 9px;
+}
+
+.home-about .about-tools {
+  display: grid;
+  grid-template-columns: .78fr repeat(3, minmax(0, 1fr));
+  gap: 0;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--ld);
+  border-bottom: 1px solid var(--ld);
+}
+
+.home-about .about-tools > * {
+  min-width: 0;
+  padding: 18px 18px 22px;
+  border-right: 1px solid var(--ld);
+}
+
+.home-about .about-tools > *:first-child {
+  padding-left: 0;
+}
+
+.home-about .about-tools > *:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.home-about .about-tools .eyebrow {
+  margin-bottom: 20px;
+}
+
+.home-about .tool-group span {
+  display: block;
+  margin: 0 0 clamp(30px, 4vw, 58px);
+  color: rgba(2, 8, 23, .42);
+  font-size: 8px;
+  letter-spacing: .12em;
+}
+
+.home-about .tool-group p {
+  color: rgba(2, 8, 23, .68);
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1100px) {
+  .home-about .expertise-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .home-about .expertise-list article:nth-child(3) {
+    border-right: 0;
+  }
+
+  .home-about .expertise-list article:nth-child(n + 4) {
+    border-top: 1px solid var(--ld);
+  }
+
+  .home-about .expertise-list article:nth-child(4) {
+    padding-left: 0;
+  }
+
+  .expertise-lower {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .home-about .about-profile-screen {
+    min-height: auto;
+  }
+
+  .home-about .experience-title {
+    position: static;
+  }
+
+  .home-about .about-tools {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-about .about-tools > *:nth-child(2) {
+    border-right: 0;
+  }
+
+  .home-about .about-tools > *:nth-child(n + 3) {
+    border-top: 1px solid var(--ld);
+  }
+
+  .home-about .about-tools > *:nth-child(3) {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-about .about-profile-screen {
+    gap: 42px;
+    padding-top: 84px;
+    padding-bottom: 70px;
+  }
+
+  .home-about .section-head {
+    margin-bottom: 0;
+  }
+
+  .about-profile-intro,
+  .expertise-intro {
+    gap: 36px;
+    padding-top: 0;
+  }
+
+  .home-about .profile-title h2 {
+    font-size: clamp(44px, 13vw, 68px);
+  }
+
+  .home-about .profile-experience > .section-head {
+    margin-bottom: 38px;
+  }
+
+  .home-about .experience-main {
+    gap: 36px;
+  }
+
+  .home-about .timeline article {
+    grid-template-columns: 1fr;
+    gap: 13px;
+  }
+
+  .home-about .timeline time {
+    padding-top: 0;
+  }
+
+  .home-about .expertise-list {
+    grid-template-columns: 1fr;
+    margin-top: 0;
+  }
+
+  .home-about .expertise-list article,
+  .home-about .expertise-list article:not(:first-child),
+  .home-about .expertise-list article:nth-child(4) {
+    min-height: 0;
+    padding: 24px 0;
+    border-top: 1px solid var(--ld);
+    border-right: 0;
+  }
+
+  .home-about .expertise-list article:first-child {
+    border-top: 0;
+  }
+
+  .home-about .expertise-list h3 {
+    margin-top: 22px;
+  }
+
+  .home-about .expertise-list p {
+    max-width: none;
+  }
+
+  .expertise-lower {
+    gap: 54px;
+  }
+
+  .core-skill-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .home-about .about-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .home-about .about-tools > *,
+  .home-about .about-tools > *:first-child,
+  .home-about .about-tools > *:nth-child(3),
+  .home-about .about-tools > *:last-child {
+    padding: 20px 0;
+    border-top: 1px solid var(--ld);
+    border-right: 0;
+  }
+
+  .home-about .about-tools > *:first-child {
+    border-top: 0;
+  }
+
+  .home-about .tool-group span {
+    margin-bottom: 18px;
+  }
+}
+
+/* Approved 18px reading size for the profile copy that was formerly 13–14px. */
+.home-about .section-head,
+.home-about .profile-title > .eyebrow,
+.home-about .about-profile-intro .profile-copy > p:last-child,
+.home-about .experience-title > .eyebrow,
+.home-about .core-skills > .eyebrow,
+.home-about .tools-heading > .eyebrow,
+.home-about .expertise-intro .profile-copy .lead,
+.home-about .timeline time,
+.home-about .timeline .experience-role,
+.home-about .timeline .experience-description,
+.home-about .timeline .experience-tags,
+.home-about .expertise-list article span,
+.home-about .expertise-list article p,
+.home-about .core-skill-list li,
+.home-about .tool-group span,
+.home-about .tool-group p {
+  font-size: 18px;
+}
+
+.home-about .section-head,
+.home-about .profile-title > .eyebrow,
+.home-about .experience-title > .eyebrow,
+.home-about .core-skills > .eyebrow,
+.home-about .tools-heading > .eyebrow,
+.home-about .timeline time,
+.home-about .timeline .experience-role,
+.home-about .expertise-list article span,
+.home-about .tool-group span {
+  line-height: 1.4;
+}
+
+.home-about .timeline .experience-description,
+.home-about .about-profile-intro .profile-copy > p:last-child,
+.home-about .expertise-intro .profile-copy .lead,
+.home-about .expertise-list article p,
+.home-about .tool-group p {
+  line-height: 1.65;
+}
+
+.home-about .timeline .experience-tags {
+  line-height: 1.55;
+}
+
+.home-about .core-skill-list li {
+  line-height: 1.45;
+}

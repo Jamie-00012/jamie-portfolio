@@ -1,0 +1,7 @@
+/* Only the inserted Mate X6 commerce boards. */
+#mate-web-ui { width:100%;margin:0;padding:0;background:#aaa;scroll-margin-top:72px; }
+#mate-web-ui figure { margin:0;padding:0; }
+#mate-web-ui a { display:block;line-height:0;cursor:zoom-in; }
+#mate-web-ui img { display:block;width:100%;height:auto;max-width:100%; }
+#mate-web-ui a:focus-visible { outline:3px solid #ff4b00;outline-offset:-3px; }
+#mate-web-ui .mate-web-ui-description { position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }

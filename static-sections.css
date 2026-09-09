@@ -1,0 +1,73 @@
+/* Screens 01, 03 and 04 are intentionally static editorial layouts. */
+[data-static-section] .reveal,
+[data-static-section] .reveal-text,
+[data-static-section] .home-motion-item {
+  opacity: 1 !important;
+  clip-path: none !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-card,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] .secondary-feature-card,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] .secondary-detail-card,
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-card img,
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-copy,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] img {
+  opacity: 1 !important;
+  clip-path: none !important;
+  filter: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-card:hover img,
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-card:hover .project-copy,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] .secondary-feature-card:hover img,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] .secondary-detail-card:hover img {
+  filter: none !important;
+  transform: none !important;
+}
+
+body[data-build="four-case-1"] #about .about-reference-screen[data-static-section] .about-reference-more.portfolio-cta,
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-copy > .portfolio-cta,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] .secondary-card-copy > .portfolio-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 144px;
+  min-height: 44px;
+  padding: 10px 30px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 30px;
+  background: #ff4b00;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: normal;
+  position: static;
+  top: auto;
+  text-transform: none;
+  transition: background-color .25s ease, transform .25s ease;
+}
+
+body[data-build="four-case-1"] #about .about-reference-screen[data-static-section] .about-reference-more.portfolio-cta {
+  margin-top: 0;
+}
+
+body[data-build="four-case-1"] #about .about-reference-screen[data-static-section] .about-reference-more.portfolio-cta:hover,
+body[data-build="four-case-1"] #works.works-reference[data-static-section] .project-card:hover .portfolio-cta,
+body[data-build="four-case-1"] #works-secondary.works-secondary-page[data-static-section] a:hover .portfolio-cta {
+  background: #ff641f;
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body[data-build="four-case-1"] .portfolio-cta {
+    transform: none !important;
+    transition: none !important;
+  }
+}
