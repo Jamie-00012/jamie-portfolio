@@ -1,4 +1,4 @@
-/* Closing composition is scoped to the root homepage. */
+﻿/* Closing composition is scoped to the root homepage. */
 body[data-build="four-case-1"] #contact.closing-reference {
   position:relative;isolation:isolate;display:flex;flex-direction:column;
   height:auto;min-height:100svh;overflow:hidden;background:#000;color:#fff;
@@ -7,7 +7,7 @@ body[data-build="four-case-1"] #contact.closing-reference {
 }
 #contact.closing-reference .closing-reference-texture {
   position:absolute;z-index:-1;pointer-events:none;right:0;bottom:0;width:32%;height:54%;
-  background:url('/assets/closing-reference-05.png') right bottom / 312.5% 185.185% no-repeat;
+  background:url('../assets/closing-reference-05.png') right bottom / 312.5% 185.185% no-repeat;
   mask-image:linear-gradient(to right,transparent,#000 35%);
 }
 #contact.closing-reference .closing-reference-main { display:grid;grid-template-columns:32.8% 67.2%; }

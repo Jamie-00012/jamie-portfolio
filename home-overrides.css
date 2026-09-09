@@ -1,4 +1,4 @@
-.about-reference-person p{font-size:16px!important;line-height:1.65}
+﻿.about-reference-person p{font-size:16px!important;line-height:1.65}
 .experience-reference-list article h3{font-size:20px!important;line-height:1.25}
 .experience-reference-list article p{font-size:16px!important;line-height:1.7}
 .works-reference-title>div>h3{font-size:20px!important;line-height:1.25}
@@ -39,7 +39,7 @@
 #experience .scroll-reveal-word{display:inline-block;opacity:calc(.6 + var(--scroll-reveal-progress) * .4);filter:blur(var(--scroll-reveal-blur));will-change:opacity,filter}
 #experience .staggered-text .scroll-reveal-word,#contact .staggered-text .scroll-reveal-word{transform:translateY(calc((1 - var(--scroll-reveal-progress)) * .34em));transition:transform .12s linear,opacity .12s linear,filter .12s linear}
 #contact .scroll-reveal-word{display:inline-block;opacity:calc(.6 + var(--scroll-reveal-progress) * .4);filter:blur(var(--scroll-reveal-blur));will-change:opacity,filter}
-#about .experience-reference-banner{margin-top:-1px;background-image:url('/assets/experience-banner-new.png');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#111;}
+#about .experience-reference-banner{margin-top:-1px;background-image:url('../assets/experience-banner-new.png');background-size:cover;background-position:center;background-repeat:no-repeat;background-color:#111;}
 @media(prefers-reduced-motion:reduce){#experience .scroll-reveal-word,#contact .scroll-reveal-word{opacity:1;filter:none;transform:none;will-change:auto;transition:none}}
 @media(prefers-reduced-motion:reduce){#home.blue-ink-hero .home-video-background,#home.blue-ink-hero .hero-dynamic-overlay,#home.blue-ink-hero .hero-dynamic-noise{animation:none}#home.blue-ink-hero .blue-ink-video{transform:scale(1.035);transition:none}}
 

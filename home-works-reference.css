@@ -1,4 +1,4 @@
-body[data-build="four-case-1"] #works.works-reference { background:#000;color:#fff;padding:60px 7.3vw 88px;min-height:100svh;height:auto;overflow:visible;font-family:Arial,"Microsoft YaHei",sans-serif;--radius-cards:22px; }
+﻿body[data-build="four-case-1"] #works.works-reference { background:#000;color:#fff;padding:60px 7.3vw 88px;min-height:100svh;height:auto;overflow:visible;font-family:Arial,"Microsoft YaHei",sans-serif;--radius-cards:22px; }
 #works.works-reference .works-reference-head { display:flex;justify-content:space-between;gap:24px;border-top:1px solid #aaa;padding-top:20px;font-size:20px;line-height:1.4; }
 #works.works-reference .works-reference-head span:last-child { color:#888; }
 #works.works-reference .works-reference-title { display:grid;grid-template-columns:57.5% 32%;margin-top:132px;margin-bottom:78px; }

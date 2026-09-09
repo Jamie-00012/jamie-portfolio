@@ -1,4 +1,4 @@
-/* Homepage-only motion layer. This file is intentionally not loaded by case pages. */
+﻿/* Homepage-only motion layer. This file is intentionally not loaded by case pages. */
 :root {
   /* Homepage interaction tokens supplied by the portfolio owner. */
   --color-white-canvas: #ffffff;

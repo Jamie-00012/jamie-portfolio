@@ -1,4 +1,4 @@
-/* Homepage-only profile content. Case pages and the archived B variant do not load this file. */
+﻿/* Homepage-only profile content. Case pages and the archived B variant do not load this file. */
 .home-about {
   background: var(--paper);
   color: var(--ink);
